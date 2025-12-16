@@ -74,3 +74,14 @@ div.feedback {
     border-radius: 8px;
     text-align: center;
 }
+
+a {
+    text-decoration: none; 
+    color: #7f827f;      
+    font-weight: bold;     
+}
+
+a:hover {
+    color: white; 
+}
+
