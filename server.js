@@ -11,7 +11,7 @@ server.get('/',(req,res)=>{
 server.post('/result',(req,res)=>{
     const height=req.body.height;
     const weight=req.body.weight;
-    const bmi=(weight/(height*height));
+    const bmi=(weight/(height*height / 10000));
 
     if(bmi<18.5){
         res.render('result',{bmi:bmi, color:'orange', message:'You are underweight'});
